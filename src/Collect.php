@@ -44,6 +44,9 @@ class Collect
 
     public function first()
     {
+        if (empty($this->array)) {
+            return null;
+        }
         return $this->array[array_key_first($this->array)];
     }
 

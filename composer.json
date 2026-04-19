@@ -1,25 +1,17 @@
 {
-  "name": "jurapro/collect",
-  "description": "Module for working with arrays ",
-  "type": "library",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "jurapro",
-      "email": "jurapro@yandex.ru"
-    }
-  ],
-  "minimum-stability": "dev",
-  "require": {
-    "php": "^7.4 | ^8.0",
-    "phpunit/phpunit": "*"
-  },
-  "autoload": {
-    "psr-4": {
-      "Collect\\": "src/"
+    "name": "collect/test",
+    "description": "Unit tests for Collect class",
+    "require-dev": {
+        "phpunit/phpunit": "10.5"
     },
-    "files": [
-      "src/helpers.php"
-    ]
-  }
+    "autoload": {
+        "psr-4": {
+            "Collect\\": "src/"
+        }
+    },
+    "config": {
+        "audit": {
+            "ignore": ["PKSA-z3gr-8qht-p93v"]
+        }
+    }
 }
